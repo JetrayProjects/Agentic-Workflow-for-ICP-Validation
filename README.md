@@ -1,4 +1,4 @@
-#Automated ICP Validation Workflow
+# Automated ICP Validation Workflow
 
 This n8n workflow automates the full **B2B Ideal Customer Profile (ICP)
 validation process** -- from extracting companies from an event agenda
