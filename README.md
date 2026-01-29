@@ -14,13 +14,13 @@ identify high-fit prospects at scale using AI-powered research.
 
 The workflow performs the following high-level steps:
 
-1.  Extracts company names from a PDF agenda.\
-2.  Finds each company's official website.\
+1.  Extracts company names from a PDF agenda.
+2.  Finds each company's official website.
 3.  Scrapes and analyzes both:
     -   The vendor's website (e.g. Ascendo).
-    -   Each prospect's website.\
-4.  Builds structured profiles for both sides.\
-5.  Evaluates ICP fit using a scoring engine.\
+    -   Each prospect's website.
+4.  Builds structured profiles for both sides.
+5.  Evaluates ICP fit using a scoring engine.
 6.  Writes results directly to Google Sheets.
 
 End result: a live, continuously updatable **prospect qualification
@@ -62,9 +62,9 @@ system**.
 
 -   Combines vendor and prospect profiles.
 -   Scores each prospect using:
-    -   Must-have signals\
-    -   Nice-to-have signals\
-    -   Disqualifiers\
+    -   Must-have signals
+    -   Nice-to-have signals
+    -   Disqualifiers
     -   Missing information penalties\
 -   Produces:
     -   Fit score (0--100)
@@ -83,63 +83,63 @@ system**.
 
 Each row contains:
 
--   Company Name\
--   Industry\
--   Sub-Industries\
--   Headquarters\
--   Regions Served\
--   Offerings\
--   Primary Customer Types\
--   Employee Range\
--   ICP Fit Score\
--   ICP Fit Label\
--   Confidence Level\
--   Top Fit Reasons\
--   Matched Must-Have Signals\
--   Matched Nice-To-Have Signals\
--   Disqualifier Signals\
--   Missing Information\
+-   Company Name
+-   Industry
+-   Sub-Industries
+-   Headquarters
+-   Regions Served
+-   Offerings
+-   Primary Customer Types
+-   Employee Range
+-   ICP Fit Score
+-   ICP Fit Label
+-   Confidence Level
+-   Top Fit Reasons
+-   Matched Must-Have Signals
+-   Matched Nice-To-Have Signals
+-   Disqualifier Signals
+-   Missing Information
 -   Company Description
 
 ------------------------------------------------------------------------
 
 ## Tech Stack
 
--   **n8n** -- Orchestration\
--   **Google Drive** -- PDF ingestion\
--   **Firecrawl** -- Web mapping + scraping\
--   **Gemini (2.5 Flash)** -- Text extraction + profiling\
--   **OpenAI (GPT-4.1 / GPT-5)** -- Web search + ICP scoring\
+-   **n8n** -- Orchestration
+-   **Google Drive** -- PDF ingestion
+-   **Firecrawl** -- Web mapping + scraping
+-   **Gemini (2.5 Flash)** -- Text extraction + profiling
+-   **OpenAI (GPT-4.1 / GPT-5)** -- Web search + ICP scoring
 -   **Google Sheets** -- Final data store
 
 ------------------------------------------------------------------------
 
 ## Key Design Principles
 
--   Facts-only analysis\
--   Structured JSON everywhere\
--   No marketing fluff\
--   Sales-usable outputs\
+-   Facts-only analysis
+-   Structured JSON everywhere
+-   No marketing fluff
+-   Sales-usable outputs
 -   Fully automated, no manual research
 
 ------------------------------------------------------------------------
 
 ## Typical Use Cases
 
--   Event attendee qualification\
--   Account-based marketing (ABM)\
--   Conference prospecting\
--   Partner evaluation\
+-   Event attendee qualification
+-   Account-based marketing (ABM)
+-   Conference prospecting
+-   Partner evaluation
 -   Sales territory planning
 
 ------------------------------------------------------------------------
 
 ## How to Use
 
-1.  Upload an agenda PDF to Google Drive.\
-2.  Set the file URL in the workflow.\
-3.  Set the vendor website URL.\
-4.  Run the workflow.\
+1.  Upload an agenda PDF to Google Drive.
+2.  Set the file URL in the workflow.
+3.  Set the vendor website URL.
+4.  Run the workflow.
 5.  Open the connected Google Sheet.
 
 Within minutes, you get a ranked list of **who is actually worth talking
@@ -151,10 +151,10 @@ to**.
 
 Easy extensions:
 
--   Add LinkedIn enrichment\
--   Add CRM sync (HubSpot / Salesforce)\
--   Trigger emails for Strong Fit leads\
--   Add industry-specific scoring rules\
+-   Add LinkedIn enrichment
+-   Add CRM sync (HubSpot / Salesforce)
+-   Trigger emails for Strong Fit leads
+-   Add industry-specific scoring rules
 -   Add revenue estimation agent
 
 ------------------------------------------------------------------------
@@ -163,14 +163,14 @@ Easy extensions:
 
 This workflow replaces:
 
--   30+ hours of manual research\
--   10+ browser tabs per company\
+-   30+ hours of manual research
+-   10+ browser tabs per company
 -   Subjective sales opinions
 
 With:
 
--   Objective AI analysis\
--   Reproducible scoring\
+-   Objective AI analysis
+-   Reproducible scoring
 -   Scalable automation
 
 It turns **lead qualification into an algorithm**.
